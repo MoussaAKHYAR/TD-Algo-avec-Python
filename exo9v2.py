@@ -21,6 +21,8 @@ if(hd <= ha):
   mda = hg%60
   print("la durée du vol est {}H {}mm ".format(hda,mda))
 else:
-  print("On considère que le départ et l'arrivé ont lieu le même jour ")
-
+  hg = 1440 - (((hd * 60 + md ) - ( ha * 60 + ma)))
+  hda =int(hg/60)
+  mda = hg%60
+  print("la durée du vol est {}H {}mm ".format(hda,mda))
 

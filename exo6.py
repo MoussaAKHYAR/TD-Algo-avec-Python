@@ -14,7 +14,7 @@ print("entrer les coordonées du point B (x2,y2)")
 x2 = int(input())
 y2 = int(input())
 
-d = math.fabs(((x1 - x2)*2 + (y1 - y2)*2))
+d = math.sqrt((math.pow((x1 - x2),2) + math.pow((y1 - y2),2)))
 print("la distance entre le point A et B est : {} ".format(math.sqrt(d)))
 
 
